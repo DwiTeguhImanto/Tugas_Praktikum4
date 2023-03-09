@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Efek Fade()</title>
+    <script src="../jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // perintah menghilangkan box
+            $(".fadeOut").click(function() {$(".box").fadeOut("fast")});
+            // perintah memunculkan box
+            $(".fadeIn").click(function() {$(".box").fadeIn("slow")});
+            // perintah memudarkan opacity box 
+            $(".fadeIn_03").click(function() {$(".box").fadeTo("slow",0.3)});
+
+        });
+    </script>
+    <style type="text/css">
+        .box {
+            width: 250px;
+            height: 150px;
+            background-color: yellow;
+            border: 1px solid black;
+            margin : 20px;
+        }
+        .button {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="button">
+        <button class="fadeIn">Fade In</button>
+        <button class="fadeOut">Fade Out</button>
+        <button class="fadeIn_03">Fade In 0.3 </button>
+    </div>
+    
+</body>
+</html>

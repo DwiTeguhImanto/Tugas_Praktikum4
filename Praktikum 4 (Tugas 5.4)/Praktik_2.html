@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>event double klik merubah warna kotak</title>
+        <script src="../jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                // perintah mengubah warna background kotak dengan doubleklik
+                $(".kotak_1").dblclick(function(){
+                    $(".kotak_1").addClass("ubahWarna")
+                });
+                $(".kotak_2").dblclick(function(){
+                    $(".kotak_2").addClass("ubahWarna")
+                });
+                $(".kotak_3").dblclick(function(){
+                    $(".kotak_3").addClass("ubahWarna")
+                });
+                $(".kotak_4").dblclick(function(){
+                    $(".kotak_4").addClass("ubahWarna")
+                });
+
+            });
+
+        </script>
+
+        <style type="text/css">
+
+            .kotak_1, .kotak_2, .kotak_3, .kotak_4{
+                height: 50px;
+                width: 50px;
+                background-color: yellow;
+                margin: 5px;
+            }
+
+            .ubahWarna {
+                height: 50px;
+                width: 50px;
+                background-color: red;        
+            }
+
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <p>Klik 2x pada kotak untuk merubah warnanya </p>
+        <ul>
+            <li><div class="kotak_1" ></div></li>
+            <li><div class="kotak_2" ></div></li>
+            <li><div class="kotak_3" ></div></li>
+            <li><div class="kotak_4" ></div></li>
+        </ul>
+
+    </body>
+</html>

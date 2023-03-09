@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>tombol sembunyi dan tampilkan dengan beberapa gambar</title>
+        <script src="../jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // perintah menyembunyikan content berupa beberapa foto 
+                $(".sembunyi_1").click(function(){$("#foto_1").hide("slow")});
+                $(".tampil_1").click(function(){$("#foto_1").show("slow")});
+                $(".sembunyi_2").click(function(){$("#foto_2").hide("slow")});
+                $(".tampil_2").click(function(){$("#foto_2").show("slow")});
+
+            });
+
+        </script>
+    </head>
+    <body>
+        
+            <button class="sembunyi_1">Sembunyikan</button>
+            <button class="tampil_1">Tampilkan</button>
+            
+        <br><br> 
+            <button class="sembunyi_2">Sembunyikan</button>
+            <button class="tampil_2">Tampilkan</button>
+        <br><br>
+        <img src="../img/foto_1.jpg" id="foto_1" alt="">
+        <br>
+        <img src="../img/foto_2.jpg" id="foto_2" alt="">
+        
+    </body>
+</html>
